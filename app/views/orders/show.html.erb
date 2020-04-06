@@ -20,7 +20,6 @@
       </thead>
       <tbody>
       <% @line_items.each do |item| %>
-        <%# <% raise item.inspect %>
         <%= render 'line_item', product: item.product, quantity: item.quantity, price:item.item_price_cents %>
         <% end %>
       </tbody>
