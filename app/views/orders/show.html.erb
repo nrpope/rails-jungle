@@ -19,8 +19,9 @@
         </tr>
       </thead>
       <tbody>
-        <% @products.each do |item| %>
-          <%= render 'line_item', product: item[:product], quantity: item[:quantity].to_i %>
+      <% @line_items.each do |item| %>
+        <%# <% raise item.inspect %> %>
+        <%= render 'line_item', product: item.product, quantity: item.quantity, price:item.item_price_cents %>
         <% end %>
       </tbody>
       <tfoot>
@@ -35,7 +36,7 @@
       </tfoot>
     </table>
   </div>
-  
+
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>
