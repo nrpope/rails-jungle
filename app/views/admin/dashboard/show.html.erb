@@ -5,9 +5,13 @@
   </header>
 
 <div class="row text-center">
+<%= link_to 'admin/products#index' do %>
 <div class="col-md-6 well"><h2>Total products: <%= @total_products %></h2></div>
+<% end %>
+<%= link_to 'admin/categories#index' do %>
 <div class="col-md-6 well"><h2>Total categories: <%= @total_categories %></h2></div>
 </div>
+<% end %>
 
 </div> 
 </section>
