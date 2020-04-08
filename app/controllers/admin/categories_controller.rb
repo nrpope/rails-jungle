@@ -1,7 +1,7 @@
 class Admin::CategoriesController < ApplicationController
-
-  http_basic_authenticate_with name: ENV['ADMIN_USER'], password: ENV['ADMIN_PASS']
   
+  http_basic_authenticate_with name: ENV['ADMIN_USER'], password: ENV['ADMIN_PASS']
+
   def index
     @categories = Category.all
   end
@@ -9,7 +9,7 @@ class Admin::CategoriesController < ApplicationController
   def new
     @category = Category.new
   end
-  
+
   def create
     @category = Category.new(cat_params)
 
