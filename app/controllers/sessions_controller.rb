@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      redirect_to '/login'
+    # If user's login doesn't work, send them back to the login form.
+    redirect_to '/login', :flash => { :error => 'Error logging in, please check your email/password.' }
     end
   end
 

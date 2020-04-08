@@ -78,11 +78,5 @@ RSpec.describe User, type: :model do
       user = described_class.authenticate_with_credentials("TEST@test.COM","abcdefg")
       expect(user).to be_instance_of(described_class)
     end
-<<<<<<< HEAD
   end
-=======
-
-  end
-
->>>>>>> feature/user-specs
 end
