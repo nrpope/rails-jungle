@@ -2,6 +2,7 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+Learning how to develop an app using TDD and OOP. Tasks involeved were editing functionality, adding security, admin and user controllers, formatting pricing, adding error catching and logging, and developing test specs.
 
 ## Setup
 
@@ -22,6 +23,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-* PostgreSQL 9.x
-* Stripe
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
